@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:padding="10dp" >
+   
+    <Button 
+        android:layout_width="match_parent"
+        android:text="insert"
+        android:layout_height="50dp"
+        android:id="@+id/insert_btn"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:text="update"
+        android:layout_height="50dp"
+        android:id="@+id/update_btn"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:text="delete"
+        android:layout_height="50dp"
+        android:id="@+id/delete_btn"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:text="select"
+        android:layout_height="50dp"
+        android:id="@+id/select_btn"/>
+</LinearLayout>
