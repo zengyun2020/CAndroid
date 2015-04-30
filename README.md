@@ -19,7 +19,6 @@ public class SecondActivity extends Activity{
 	//添加事件
 	@OnClick(R.id.insert_btn)
 	void insert(){
-		
 	}
 	
 	protected void onCreate(Bundle savedInstanceState) {		
@@ -33,6 +32,7 @@ public class SecondActivity extends Activity{
 DBUtil
 DbUtil是ORM框架，可以直接保存bean对象，对于bean对象要求如下
 必须在类声明上添加@Table注解，必须为某个int类型添加@Id注解作为主键，bean类必须具有无参数的构造函数
+
 @Table(name="testtable")
 public class Person {
 	@Id
@@ -74,9 +74,9 @@ System.out.println(db.where("name=\"sss\"").oderBy("id desc").select(Class.forNa
 HttpUtil
 实现大文件下载,图像下载,字符串数据请求等功能，对图像实现了内存缓存和硬盘缓存，避免OOM错误。
 使用方式与volley类似，有StringRequest,ImageRequest,FileRequest三种，以后还会陆续增加
-final RequestQueue queue = new RequestQueue(1, null);				
-queue.start();	
-Request<String> req = new StringRequest(Request.HttpMethod.GET,
+	final RequestQueue queue = new RequestQueue(1, null);				
+	queue.start();
+	Request<String> req = new StringRequest(Request.HttpMethod.GET,
 						"http://www.tuicool.com/articles/QRzyeiB",
 						new Listener<String>() {
 					
